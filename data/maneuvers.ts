@@ -1,5 +1,5 @@
-import bottomTurnFront from "../assets/videos/maneuvers/surf/bottom-turn-front.mp4";
-import bottomTurnBack from "../assets/videos/maneuvers/surf/bottom-turn-back.mp4";
+import BottomTurnSurfSkateFront from "../assets/videos/maneuvers/surfskate/bottom-turn-front.mp4";
+import BottomTurnSurfSkateBack from "../assets/videos/maneuvers/surfskate/bottom-turn-back.mp4";
 
 export const MANEUVERS_SIDE = {
   FRONTSIDE: "FRONTSIDE",
@@ -58,7 +58,7 @@ export const MANEUVERS_DATA = [
           {
             type: "text",
             content:
-              "Compressez-vous, poussez sur le pied arrière et regardez vers la lèvre. Utiliser la main arrière comme centre de rotation.",
+              "Compress, Reach  and hold ( pressure back foot ), look at the lip, use the back hand as a pivot point and extend at the end of the turn",
           },
         ],
       },
@@ -77,7 +77,55 @@ export const MANEUVERS_DATA = [
           {
             type: "text",
             content:
-              "Tournez vos épaules et hanches ensemble pour un bon pivot.",
+              "Compress, Reach ( open leading palm ) and hold ( pressure back foot ), look at the lip, use the back hand as a pivot point and extend at the end of the turn",
+          },
+        ],
+      },
+    ],
+  },
+];
+
+export const MANEUVERS_DATA_SURFSKATE = [
+  {
+    title: "Bottom Turn",
+    maneuver: MANEUVERS_LIST["Bottom Turn"],
+    gif: require("../assets/videos/maneuvers/surfskate/bottom-turn-front.gif"),
+    content: [
+      {
+        type: MANEUVERS_SIDE.FRONTSIDE,
+        content: [
+          {
+            type: "text",
+            content:
+              "Virage en bas de la vague pour prendre de la vitesse (frontside).",
+          },
+          {
+            type: "video",
+            source: BottomTurnSurfSkateFront,
+          },
+          {
+            type: "text",
+            content:
+              "Compress, Reach  and hold ( pressure back foot ), look at the lip, use the back hand as a pivot point and extend at the end of the turn",
+          },
+        ],
+      },
+      {
+        type: MANEUVERS_SIDE.BACKSIDE,
+        content: [
+          {
+            type: "text",
+            content:
+              "Virage en bas de la vague pour prendre de la vitesse (backside).",
+          },
+          {
+            type: "video",
+            source: BottomTurnSurfSkateBack,
+          },
+          {
+            type: "text",
+            content:
+              "Compress, Reach ( open leading palm ) and hold ( pressure back foot ), look at the lip, use the back hand as a pivot point and extend at the end of the turn",
           },
         ],
       },
