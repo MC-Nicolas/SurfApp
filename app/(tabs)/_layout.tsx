@@ -44,9 +44,18 @@ export default function TabLayout() {
         },
       })}
     >
-      <Tabs.Screen name="index" options={{ title: "Surf" }} />
-      <Tabs.Screen name="surfskate" options={{ title: "SurfSkate" }} />
-      <Tabs.Screen name="strength" options={{ title: "Renforcement" }} />
+      <Tabs.Screen
+        name="index"
+        options={{ title: "Surf", unmountOnBlur: true }}
+      />
+      <Tabs.Screen
+        name="surfskate"
+        options={{ title: "SurfSkate", unmountOnBlur: true }}
+      />
+      <Tabs.Screen
+        name="strength"
+        options={{ title: "Renforcement", unmountOnBlur: true }}
+      />
     </Tabs>
   );
 }
